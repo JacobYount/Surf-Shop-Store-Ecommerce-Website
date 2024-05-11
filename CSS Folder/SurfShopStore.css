@@ -1,0 +1,202 @@
+/* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #efeadd;
+			cursor: url('../Surf Shop Store Images/Surfboard logo cursor.png'), auto;
+        }
+
+        header {
+            background-color: #319ce7;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+
+.top-right-images {
+            position: absolute;
+            top: 34px;
+            right: 12px;
+            display: flex;
+        }
+
+        .top-right-images img {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+
+
+        nav {
+            background-color: #eab37c;
+            object-width: 100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            max-height: 65px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f6d7b0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+
+
+		.image-container {
+            position: relative;
+            width: 288px;
+            height: 288px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            opacity: 0;
+        }
+
+        .overlay-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+        .product {
+            width: 24%;
+            margin: 20px;
+            padding: 15px;
+            background-color: #efeadd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			position: relative;
+        }
+		
+        .product a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #opening-image {
+            width: 100%;
+            max-height: 90vh;
+            object-fit-vertically: contain;
+            object-fit-horizontally: cover;
+            margin: 0;
+            display: block;
+            object-position: top;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 14px;
+        }
+
+        #top-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.22), 0 24px 60px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+        }
+		
+		a:link {
+	text-decoration:none;
+	font-weight:none;
+	color: Inherit;
+	}
+		a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:visited {
+  color: Inherit;
+  background-color: transparent;
+  text-decoration: none;
+		}
+		
+		
+		.dropbtn {
+		background-color: #eab37c;
+  color: white;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #89CFF0; /* light blue color */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #319ce7;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ba8e63; text-decoration: underline;}

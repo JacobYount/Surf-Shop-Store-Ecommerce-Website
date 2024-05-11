@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Products">
+    <title>Surf Shop Store</title>
+	<link rel="icon" type="image/x-icon" href="..\Surf Shop Store Images\Surfboard logo.png">
+	<link rel="stylesheet" type="text/css" href="..\CSS Folder\SurfShopStore.css">
+	
+	<style>
+.dropbtn2 {
+  background-color: #3498DB;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+  background-color: #2980B9;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  left: 8px;
+}
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown2:hover .dropdown2-content {
+      display: block;
+    }
+
+.dropdown2-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown2 a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+.section-header {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+		color: black;
+		font-weight: bold;
+		font-decoration: underline;
+    }
+
+</style>
+	
+</head>
+<body>
+
+<header>
+    <img id="logo" src="..\Surf Shop Store Images\Surfboard logo.png" alt="Logo">
+    <h1>Surf Shop Store</h1>
+	
+	<div class="top-right-images">
+        <a href="https://www.instagram.com/uiwcardinals/?hl=en"><img src="..\Surf Shop Store Images\instagram-logo.png" alt="Instagram Logo"></a>
+        <a href="https://twitter.com/uiwcardinals?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="..\Surf Shop Store Images\X-logo.png" alt="Twitter Logo"></a>
+        <a href="https://www.tiktok.com/@uiwtx?lang=en"><img src="..\Surf Shop Store Images\tiktok-logo.png" alt="TikTok Logo"></a>
+        <a href="..\HTML Folder\Cartpage.html"><img src="..\Surf Shop Store Images\icons8-cart-48.png" alt="Cart"></a>
+    </div>
+	
+    <nav> 
+        <a href="..\HTML Folder\SurfShopStore.html">Home</a>
+		<div class="dropdown">
+  <button class="dropbtn"><a href="..\HTML Folder\ProductsPrimaryPage.html">Products</a></button> 
+  <div class="dropdown-content">
+    <a href="..\HTML Folder\ProductsPrimaryPage.html">All Products</a>
+    <a href="..\HTML Folder\ShirtsProductPage.html">Shirts</a>
+    <a href="..\HTML Folder\HatsProductPage.html">Hats</a>
+	<a href="..\HTML Folder\JacketsProductPage.html">Jackets</a>
+  </div>
+</div>
+        <a href="..\HTML Folder\AboutUs.html">About Us</a>
+        <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+		<a href="..\HTML Folder\LocationsPage.html">Locations</a>
+    </nav>
+</header>
+
+
+<main>
+
+<div class="section-header">Products</div>
+
+<div class="dropdown2">
+  <button class="dropbtn2">Filter</button>
+  <div id="myDropdown2" class="dropdown2-content">
+    <a href="..\HTML Folder\ProductsPrimaryPage.html">All Products</a>
+    <a href="..\HTML Folder\ShirtsProductPage.html">Shirts</a>
+    <a href="..\HTML Folder\JacketsProductPage.html">Jackets</a>
+    <a href="..\HTML Folder\HatsProductPage.html">Hats</a>
+  </div>
+</div>
+
+
+<script>
+    function addToCart() {
+        // Your add to cart logic goes here
+
+        // Stop the default behavior of the link
+        event.preventDefault();
+		
+		// Get the audio element
+		var audio = new Audio("../Final Website Audios/Cash-Register-Sound.mp3");
+
+		// Play the audio
+		audio.play();
+		}
+</script>
+
+    <section>
+
+				<!-- Product 3 -->
+        <a href="..\HTML Folder\Sweatshirt1Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Sweatshirt 1-1.png" alt="Overlay for Product 6">
+			<img src="..\Surf Shop Store Images\Sweatshirt 1-2.png" alt="alt for Product 6">
+		</div>
+            <h2>Sweatshirt</h2>
+            <p class="shop-item-title">Honu Soft Style Pullover</p>
+            <span class="shop-item-price">$29.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+		
+		<!-- Product 5 -->
+		<a href="..\HTML Folder\Hoodie2Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Hoodie 2-1.png" alt="Overlay Product 1">
+			<img src="..\Surf Shop Store Images\Hoodie 2-2.png" alt="Product 1 alt Image ">
+		</div>
+            <h2>Hoodie</h2>
+            <p class="shop-item-title">Deck the Palms Hoodie</p>
+            <span class="shop-item-price">$49.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+
+		<!-- Product 11 -->
+        <a href="..\HTML Folder\Hoodie3Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Hoodie 3-1.png" alt="Overlay Product 1">
+			<img src="..\Surf Shop Store Images\Hoodie 3-2.png" alt="Product 1 alt Image ">
+		</div>
+            <h2>Hoodie</h2>
+            <p class="shop-item-title">Easy Does It Hoodie</p>
+            <span class="shop-item-price">$19.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+		
+		<!-- Product 12 -->
+        <a href="..\HTML Folder\Hoodie4Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Hoodie 4-1.png" alt="Overlay Product 1">
+			<img src="..\Surf Shop Store Images\Hoodie 4-2.png" alt="Product 1 alt Image ">
+		</div>
+            <h2>Hoodie</h2>
+            <p class="shop-item-title">Rip Curl Hoodie</p>
+            <span class="shop-item-price">$19.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+		
+		<!-- Product 16 -->
+        <a href="..\HTML Folder\Hoodie1Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Hoodie 1-1.png" alt="Overlay for Product 2">
+			<img src="..\Surf Shop Store Images\Hoodie 1-2.png" alt="alt for Product 2">
+		</div>
+            <h2>Hoodie</h2>
+            <p class="shop-item-title">Koloa Cocky Hoodie</p>
+            <span class="shop-item-price">$49.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+		
+
+		<!-- Product 18 -->
+        <a href="..\HTML Folder\Hoodie5Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Hoodie 5-1.png" alt="Overlay Product 1">
+			<img src="..\Surf Shop Store Images\Hoodie 5-2.png" alt="Product 1 alt Image ">
+		</div>
+            <h2>Hoodie</h2>
+            <p class="shop-item-title">Fifty Two Surf Pullover</p>
+            <span class="shop-item-price">$19.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+
+
+
+
+
+
+
+
+        <!-- Add more products as needed -->
+    </section>
+</main>
+
+<footer>
+    <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+    <a href="..\HTML Folder\TermsofService.html">Terms of Service</a>
+    <a href="..\HTML Folder\AboutUs.html">About Us</a>
+    <a href="#top" id="top-link">Go to Top</a>
+</footer>
+
+
+
+<script src="../JavaScript Folder/products.js"></script>
+</body>
+</html>

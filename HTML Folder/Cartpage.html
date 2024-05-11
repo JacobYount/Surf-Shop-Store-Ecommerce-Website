@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="About Us">
+    <title>Surf Shop Store</title>
+	<link rel="icon" type="image/x-icon" href="..\Surf Shop Store Images\Surfboard logo.png">
+	<link rel="stylesheet" type="text/css" href="..\CSS Folder\SurfShopStore.css">
+	
+	<style>
+	
+	/* Apply styles to the header */
+	header {
+    text-align: center;
+	}
+
+	/* Center the h1 element and add custom top and bottom padding */
+	main h1 {
+    text-align: center;
+    padding: 20px 0; /* Custom top and bottom padding */
+	}
+
+	/* Center the p element and add custom top and bottom padding */
+	main p {
+    text-align: center;
+    padding: 350px 350px; /* Custom top and bottom padding */
+	}
+	
+	
+
+
+
+
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: -41px;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+	text-align: center;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 7em;
+	margin-left: 10em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+	text-align: center;
+	span-align: center;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 100%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 110px;
+    margin-right: 10px;
+	margin-left: 420px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 100px auto 80px 140px;
+    font-size: 1.75em;
+}
+	
+	
+	
+	
+	</style>
+	
+</head>
+<body>
+
+<header>
+    <img id="logo" src="..\Surf Shop Store Images\Surfboard logo.png" alt="Logo">
+    <h1>Surf Shop Store</h1>
+	
+	<div class="top-right-images">
+        <a href="https://www.instagram.com/uiwcardinals/?hl=en"><img src="..\Surf Shop Store Images\instagram-logo.png" alt="Instagram Logo"></a>
+        <a href="https://twitter.com/uiwcardinals?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="..\Surf Shop Store Images\X-logo.png" alt="Twitter Logo"></a>
+        <a href="https://www.tiktok.com/@uiwtx?lang=en"><img src="..\Surf Shop Store Images\tiktok-logo.png" alt="TikTok Logo"></a>
+        <a href="..\HTML Folder\Cartpage.html"><img src="..\Surf Shop Store Images\icons8-cart-48.png" alt="Cart"></a>
+    </div>
+	
+    <nav> 
+        <a href="..\HTML Folder\SurfShopStore.html">Home</a>
+		<div class="dropdown">
+  <button class="dropbtn"><a href="..\HTML Folder\ProductsPrimaryPage.html">Products</a></button> 
+  <div class="dropdown-content">
+    <a href="..\HTML Folder\ProductsPrimaryPage.html">All Products</a>
+    <a href="..\HTML Folder\ShirtsProductPage.html">Shirts</a>
+    <a href="..\HTML Folder\HatsProductPage.html">Hats</a>
+	<a href="..\HTML Folder\JacketsProductPage.html">Jackets</a>
+  </div>
+</div>
+        <a href="..\HTML Folder\AboutUs.html">About Us</a>
+        <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+		<a href="..\HTML Folder\LocationsPage.html">Locations</a>
+    </nav>
+</header>
+
+
+<main>
+<h1 style="font-size: 45px; text-decoration: underline;">Cart</h1>
+    
+	
+	
+	
+	
+	<section class="container content-section">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> 
+        </section>
+	
+	
+	
+	
+	
+	
+</main>
+
+<footer>
+    <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+    <a href="..\HTML Folder\TermsofService.html">Terms of Service</a>
+    <a href="..\HTML Folder\AboutUs.html">About Us</a>
+    <a href="#top" id="top-link">Go to Top</a>
+</footer>
+
+
+<script src="../JavaScript Folder/cartpage.js"></script>
+</body>
+</html>

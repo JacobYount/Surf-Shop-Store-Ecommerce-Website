@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="About Us">
+    <title>Surf Shop Store</title>
+	<link rel="icon" type="image/x-icon" href="..\Surf Shop Store Images\Surfboard logo.png">
+	<link rel="stylesheet" type="text/css" href="..\CSS Folder\SurfShopStore.css">
+	
+	<style>
+	
+	/* Apply styles to the header */
+        header {
+            text-align: center;
+        }
+
+        /* Center the h1 element and add custom top and bottom padding */
+        main h1 {
+            text-align: center;
+            padding: 10px 0; /* Custom top and bottom padding */
+        }
+
+        /* Center the p element and add custom top and bottom padding */
+        main p {
+            text-align: center;
+            padding: 0px 5px; /* Custom top and bottom padding */
+        }
+
+	
+	
+	.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.box-contents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('') 50% 50% / cover no-repeat;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+  transition: .5s ease;
+}
+.hover-point {
+  position: absolute;
+  z-index: 2;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+}
+.hover-point:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.hover-point:nth-child(2) {
+  top: 0;
+  left: calc(100% / 3);
+}
+.hover-point:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+.hover-point:nth-child(4) {
+  top: calc(100% / 3);
+  left: 0;
+}
+.hover-point:nth-child(5) {
+  top: calc(100% / 3);
+  right: 0;
+}
+.hover-point:nth-child(6) {
+  bottom: 0;
+  left: 0;
+}
+.hover-point:nth-child(7) {
+  bottom: 0;
+  left: calc(100% / 3);
+}
+.hover-point:nth-child(8) {
+  bottom: 0;
+  right: 0;
+}
+.hover-point:nth-child(1):hover ~ .box-contents {
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, .3);
+  transform-origin: right top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotateZ(2deg);
+}
+.hover-point:nth-child(2):hover ~ .box-contents {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, .3);
+  transform-origin: center top;
+  transform: perspective(1000px) rotateX(10deg);
+}
+.hover-point:nth-child(3):hover ~ .box-contents {
+  box-shadow: -15px 15px 50px rgba(0, 0, 0, .3);
+  transform-origin: left top;
+  transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(-2deg);
+}
+.hover-point:nth-child(4):hover ~ .box-contents {
+  box-shadow: 15px 5px 50px rgba(0, 0, 0, .3);
+  transform-origin: left center;
+  transform: perspective(1000px) rotateY(-10deg);
+}
+.hover-point:nth-child(5):hover ~ .box-contents {
+  box-shadow: -15px 5px 50px rgba(0, 0, 0, .3);
+  transform-origin: right center;
+  transform: perspective(1000px) rotateY(10deg);
+}
+.hover-point:nth-child(6):hover ~ .box-contents {
+  box-shadow: 15px -15px 50px rgba(0, 0, 0, .3);
+  transform-origin: right bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(-2deg);
+}
+.hover-point:nth-child(7):hover ~ .box-contents {
+  box-shadow: 0 -15px 50px rgba(0, 0, 0, .3);
+  transform-origin: center bottom;
+  transform: perspective(1000px) rotateX(-10deg);
+}
+.hover-point:nth-child(8):hover ~ .box-contents {
+  box-shadow: -15px -15px 50px rgba(0, 0, 0, .3);
+  transform-origin: left bottom;
+  transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
+}
+
+
+
+
+/* Ensure the image fits the box size */
+    .box-contents img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+.demo {
+  padding: 2em;
+}
+	
+	
+	
+	</style>
+	
+</head>
+<body>
+
+<header>
+    <img id="logo" style="margin-left: 0px;"src="..\Surf Shop Store Images\Surfboard logo.png" alt="Logo">
+    <h1>Surf Shop Store</h1>
+	
+	<div class="top-right-images">
+        <a href="https://www.instagram.com/uiwcardinals/?hl=en"><img src="..\Surf Shop Store Images\instagram-logo.png" alt="Instagram Logo"></a>
+        <a href="https://twitter.com/uiwcardinals?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="..\Surf Shop Store Images\X-logo.png" alt="Twitter Logo"></a>
+        <a href="https://www.tiktok.com/@uiwtx?lang=en"><img src="..\Surf Shop Store Images\tiktok-logo.png" alt="TikTok Logo"></a>
+        <a href="..\HTML Folder\Cartpage.html"><img src="..\Surf Shop Store Images\icons8-cart-48.png" alt="Cart"></a>
+    </div>
+	
+    <nav> 
+        <a href="..\HTML Folder\SurfShopStore.html">Home</a>
+		<div class="dropdown">
+  <button class="dropbtn"><a href="..\HTML Folder\ProductsPrimaryPage.html">Products</a></button> 
+  <div class="dropdown-content">
+    <a href="..\HTML Folder\ProductsPrimaryPage.html">All Products</a>
+    <a href="..\HTML Folder\ShirtsProductPage.html">Shirts</a>
+    <a href="..\HTML Folder\HatsProductPage.html">Hats</a>
+	<a href="..\HTML Folder\JacketsProductPage.html">Jackets</a>
+  </div>
+</div>
+        <a href="..\HTML Folder\AboutUs.html">About Us</a>
+        <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+		<a href="..\HTML Folder\LocationsPage.html">Locations</a>
+    </nav>
+</header>
+
+
+<main>
+<h1 style="font-size: 45px; text-decoration: underline;">About Us</h1>
+    <section>
+        <p style="font-size: 19px;">Welcome to Surf Shop Store, where coastal vibes meet fashion excellence! Here we have all the clothes you could ever want!</p>
+
+        <div class="left-content">
+            <p style="font-size: 19px;">At Surf Shop Store, we're not just about clothes; we're about a lifestyle. Nestled along the sun-kissed shores, our passion for beach life inspires every piece in our collection. Whether you're strolling along the boardwalk, catching waves, or simply soaking up the sun, our clothing is designed to complement your beachside adventures.</p>
+
+            <p style="font-size: 19px;">Our mission is to provide you with stylish and comfortable apparel that effortlessly transitions from sandy beaches to city streets. From breezy sundresses to laid-back tees and boardshorts, each item is crafted with quality materials and attention to detail, ensuring that you look and feel your best in every setting.</p>
+        </div>
+
+
+
+
+<div class="demo">
+  <div class="box">
+    <div class="hover-point"></div>
+    <div class="hover-point"></div>
+    <div class="hover-point"></div>
+    <div class="hover-point"></div>
+    <div class="hover-point"></div>
+    <div class="hover-point"></div>
+    <div class="hover-point"></div>
+    <div class="hover-point"></div>
+	<div class="box-contents">
+        <img src="..\Surf Shop Store Images\Shirt 3-1.png" alt="Image">
+      </div>
+  </div>
+</div>
+
+
+        <div class="left-content">
+            <p style="font-size: 19px;">At Surf Shop Store, sustainability matters. We are committed to eco-friendly practices, using recycled materials and environmentally conscious production methods whenever possible. Join us in preserving the beauty of our oceans and beaches while looking fabulous in our attire.</p>
+
+            <p style="font-size: 19px;">Explore our curated collection and dive into a world where beach fashion meets coastal chic. Whether you're a beach enthusiast or just love the relaxed vibe of seaside living, Surf Shop Store has something for everyone.</p>
+
+            <p style="font-size: 19px;">Thank you for choosing Surf Shop Store. Embrace the sun, sea, and style with us!</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+    <a href="..\HTML Folder\TermsofService.html">Terms of Service</a>
+    <a href="..\HTML Folder\AboutUs.html">About Us</a>
+    <a href="#top" id="top-link">Go to Top</a>
+</footer>
+
+</body>
+</html>

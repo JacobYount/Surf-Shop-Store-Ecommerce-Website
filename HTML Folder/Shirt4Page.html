@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Products">
+    <title>Surf Shop Store</title>
+	<link rel="icon" type="image/x-icon" href="..\Surf Shop Store Images\Surfboard logo.png">
+	<link rel="stylesheet" type="text/css" href="..\CSS Folder\SurfShopStore.css">
+	
+	<style>
+
+        .container {
+            display: flex;
+			padding-top: 20px;
+			padding-bottom: 40px;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .info-box {
+		padding-top: 20px;
+		padding-left: 115px;
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        .info-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .info-description {
+            font-size: 16px;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 42%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: #98B5B5;
+			text-decoration: none;
+        }
+
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 60px;
+            margin: 0 5px;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.6s;
+        }
+
+        .thumbnail:hover {
+            opacity: 1;
+			cursor: pointer;
+        }
+		
+		.thumbnail.active {
+			opacity: 1;
+			border: 2px solid #333;
+            
+        }
+		
+		#logo {
+    max-height: 65px;
+	max-width: 65px;
+	padding-bottom: 0;
+}
+		
+</style>
+	
+</head>
+<body>
+
+<header>
+    <img id="logo" src="..\Surf Shop Store Images\Surfboard logo.png" alt="Logo">
+    <h1>Surf Shop Store</h1>
+	
+	<div class="top-right-images">
+        <a href="https://www.instagram.com/uiwcardinals/?hl=en"><img src="..\Surf Shop Store Images\instagram-logo.png" alt="Instagram Logo"></a>
+        <a href="https://twitter.com/uiwcardinals?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="..\Surf Shop Store Images\X-logo.png" alt="Twitter Logo"></a>
+        <a href="https://www.tiktok.com/@uiwtx?lang=en"><img src="..\Surf Shop Store Images\tiktok-logo.png" alt="TikTok Logo"></a>
+        <a href="..\HTML Folder\Cartpage.html"><img src="..\Surf Shop Store Images\icons8-cart-48.png" alt="Cart"></a>
+    </div>
+	
+    <nav> 
+        <a href="..\HTML Folder\SurfShopStore.html">Home</a>
+		<div class="dropdown">
+  <button class="dropbtn"><a href="..\HTML Folder\ProductsPrimaryPage.html">Products</a></button> 
+  <div class="dropdown-content">
+    <a href="..\HTML Folder\ProductsPrimaryPage.html">All Products</a>
+    <a href="..\HTML Folder\ShirtsProductPage.html">Shirts</a>
+    <a href="..\HTML Folder\HatsProductPage.html">Hats</a>
+	<a href="..\HTML Folder\JacketsProductPage.html">Jackets</a>
+  </div>
+</div>
+        <a href="..\HTML Folder\AboutUs.html">About Us</a>
+        <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+		<a href="..\HTML Folder\LocationsPage.html">Locations</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="section">
+       <div class="shop-item">
+	   
+	   <div class="container">
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="mySlides">
+            <img class="shop-item-image" src="..\Surf Shop Store Images\Shirt 4-1.png" alt="Slide 1">
+        </div>
+
+        <div class="mySlides">
+            <img src="..\Surf Shop Store Images\Shirt 4-2.png" alt="Slide 2">
+        </div>
+
+
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Thumbnail navigation -->
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="..\Surf Shop Store Images\Shirt 4-1.png" onclick="currentSlide(1)" alt="Thumbnail 1">
+            <img class="thumbnail" src="..\Surf Shop Store Images\Shirt 4-2.png" onclick="currentSlide(2)" alt="Thumbnail 2">
+        </div>
+    </div>
+
+    <div class="info-box">
+                <h1 class="shop-item-title" style="font-size: 36px;">Offshore Cotton Tee</h1>
+                <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="shop-item-price" style="font-size: 22px;">$19.99</span>
+                </div>
+				<button class="shop-item-button" style="width: 150px; height: 40px; font-size: 20px; position: absolute; bottom: 108px; left: 1002px; transform: translateX(-50%);">Add to Cart</button>
+    </div>
+</div>
+
+
+		
+    </section>
+	
+	
+</main>
+
+<footer>
+    <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+    <a href="..\HTML Folder\TermsofService.html">Terms of Service</a>
+    <a href="..\HTML Folder\AboutUs.html">About Us</a>
+    <a href="#top" id="top-link">Go to Top</a>
+</footer>
+
+
+
+<script src="../JavaScript Folder/products.js"></script>
+</body>
+</html>

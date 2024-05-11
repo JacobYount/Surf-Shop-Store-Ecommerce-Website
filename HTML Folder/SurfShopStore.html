@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Surf Shop Store">
+    <title>Surf Shop Store</title>
+	<link rel="icon" type="image/x-icon" href="..\Surf Shop Store Images\Surfboard logo.png">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fbf7eb;
+			cursor: url('../Surf Shop Store Images/Surfboard logo cursor.png'), auto;
+        }
+
+        header {
+            background-color: #319ce7;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+
+.top-right-images {
+            position: absolute;
+            top: 34px;
+            right: 12px;
+            display: flex;
+        }
+
+        .top-right-images img {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+
+
+        nav {
+            background-color: #eab37c;
+            object-width: 100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            max-height: 65px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f6d7b0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+		.image-container {
+            position: relative;
+            width: 288px;
+            height: 288px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            opacity: 0;
+        }
+
+        .overlay-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+        .product {
+            width: 24%;
+            margin: 20px;
+            padding: 15px;
+            background-color: #efeadd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			position: relative;
+        }
+		
+        .product a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #opening-image {
+            width: 100%;
+            max-height: 90vh;
+            object-fit-vertically: contain;
+            object-fit-horizontally: cover;
+            margin: 0;
+            display: block;
+            object-position: top;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 14px;
+        }
+
+        #top-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.22), 0 24px 60px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+        }
+		
+		a:link {
+	text-decoration:none;
+	font-weight:none;
+	color: Inherit;
+	}
+		a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:visited {
+  color: Inherit;
+  background-color: transparent;
+  text-decoration: none;
+		}
+		
+		.faq-container {
+    max-width: 1200px;
+    margin: 100px auto;
+    background-color: #fff; /* controls the background of the entire faq container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);	
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+	color: white; /* white text for question */
+	background-color: #C2B280; /* Sand background for questions */
+    padding: 10px; /* Added padding for better appearance */
+    border-radius: 5px; /* Added rounded corners */
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px; /* controls how vertically spaced each question and answer are*/
+	color: white;
+	background-color: #89CFF0; /* blue background for answers */
+    padding: 10px; /* Added padding for better appearance */
+    border-radius: 5px; /* Added rounded corners */
+}
+
+.active {
+    transform: rotate(180deg);
+}
+		
+		
+		
+		
+		
+		
+		
+		.dropbtn {
+		background-color: #eab37c;
+  color: white;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #89CFF0; /* light blue color */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #319ce7;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ba8e63; text-decoration: underline;}
+		
+		
+		
+		
+		
+		
+    </style>
+</head>
+<body>
+
+<header>
+    <img id="logo" src="..\Surf Shop Store Images\Surfboard logo.png" alt="Logo">
+    <h1>Surf Shop Store</h1>
+	
+	<div class="top-right-images">
+        <a href="https://www.instagram.com/uiwcardinals/?hl=en"><img src="..\Surf Shop Store Images\instagram-logo.png" alt="Instagram Logo"></a>
+        <a href="https://twitter.com/uiwcardinals?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="..\Surf Shop Store Images\X-logo.png" alt="Twitter Logo"></a>
+        <a href="https://www.tiktok.com/@uiwtx?lang=en"><img src="..\Surf Shop Store Images\tiktok-logo.png" alt="TikTok Logo"></a>
+        <a href="..\HTML Folder\Cartpage.html"><img src="..\Surf Shop Store Images\icons8-cart-48.png" alt="Cart"></a>
+    </div>
+	
+    <nav> 
+        <a href="..\HTML Folder\SurfShopStore.html">Home</a>
+		<div class="dropdown">
+  <button class="dropbtn"><a href="..\HTML Folder\ProductsPrimaryPage.html">Products</a></button> 
+  <div class="dropdown-content">
+    <a href="..\HTML Folder\ProductsPrimaryPage.html">All Products</a>
+    <a href="..\HTML Folder\ShirtsProductPage.html">Shirts</a>
+    <a href="..\HTML Folder\HatsProductPage.html">Hats</a>
+	<a href="..\HTML Folder\JacketsProductPage.html">Jackets</a>
+  </div>
+</div>
+        <a href="..\HTML Folder\AboutUs.html">About Us</a>
+        <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+		<a href="..\HTML Folder\LocationsPage.html">Locations</a>
+    </nav>
+</header>
+
+<img id="opening-image" src="..\Surf Shop Store Images\palm-trees-on-white-beach.jpg" alt="Opening Image">
+
+<main>
+    <section>
+				<!-- Product 1 -->
+        <a href="..\HTML Folder\Shirt1Page.html" class="product hover-shadow">
+            <div class="shop-item">
+			<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Shirt 1-1.png" alt="Overlay Product 1">
+			<img src="..\Surf Shop Store Images\Shirt 1-2.png" alt="Product 1 alt Image ">
+		</div>
+		<h2>Graphic T-Shirt</h2>
+        <p class="shop-item-title">Surf Life Vintage Tee</p>
+        <span class="shop-item-price">$19.99</span>	
+    </div>
+	<button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+
+				<!-- Product 3 -->
+        <a href="..\HTML Folder\Sweatshirt1Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Sweatshirt 1-1.png" alt="Overlay for Product 6">
+			<img src="..\Surf Shop Store Images\Sweatshirt 1-2.png" alt="alt for Product 6">
+		</div>
+            <h2>Sweatshirt</h2>
+            <p class="shop-item-title">Honu Soft Style Pullover</p>
+            <span class="shop-item-price">$29.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+	
+		<!-- Product 6 -->
+        <a href="..\HTML Folder\Hat1Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Hat 1-1.png" alt="Overlay Product 3">
+			<img src="..\Surf Shop Store Images\Hat 1-2.png" alt="Product 3 alt Image ">
+		</div>
+            <h2>Redfish Hat</h2>
+            <p class="shop-item-title">Coastal Blue</p>
+            <span class="shop-item-price">$29.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+		
+        <!-- Product 8 -->
+        <a href="..\HTML Folder\Hat2Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Hat 2-2.png" alt="Overlay for Product 4">
+			<img src="..\Surf Shop Store Images\Hat 2-1.png" alt="alt for Product 4">
+		</div>
+            <h2>Hat</h2>
+            <p class="shop-item-title">Kailua Straw Hat</p>
+            <span class="shop-item-price">$29.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+
+        <!-- Product 13 -->
+        <a href="..\HTML Folder\Shirt2Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Shirt 2-1.png" alt="Overlay Product 5">
+			<img src="..\Surf Shop Store Images\Shirt 2-2.png" alt="Product 5 alt Image ">
+		</div>
+            <h2>Graphic T-shirt</h2>
+            <p class="shop-item-title">Whirling Waters Vintage Tee</p>
+            <span class="shop-item-price">$39.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+		
+		<!-- Product 16 -->
+        <a href="..\HTML Folder\Hoodie1Page.html" class="product hover-shadow">
+		<div class="shop-item">
+		<div class="image-container">
+            <img class="overlay-image shop-item-image" src="..\Surf Shop Store Images\Hoodie 1-1.png" alt="Overlay for Product 2">
+			<img src="..\Surf Shop Store Images\Hoodie 1-2.png" alt="alt for Product 2">
+		</div>
+            <h2>Hoodie</h2>
+            <p class="shop-item-title">Koloa Cocky Hoodie</p>
+            <span class="shop-item-price">$49.99</span>
+            </div>
+            <button onclick="addToCart()" class="shop-item-button" style="margin-top: 10px;">Add to Cart</button>
+        </a>
+
+        <!-- Add more products as needed -->
+    </section>
+	
+	
+	
+
+</main>
+
+
+<div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+    <div class="question">Q: What is this store?<span class="arrow">&#9660;</span></div>
+    <div class="answer">A: This store sells clothes.</div>
+</div>
+
+<div class="faq-item">
+    <div class="question">Q: How can I contact support?<span class="arrow">&#9660;</span></div>
+    <div class="answer">A: You can contact our support team through the <a href="..\HTML Folder\ContactUs.html" style="color: blue;">contact us</a> page on our website.</div>
+</div>
+
+<div class="faq-item">
+    <div class="question">Q: Where is this store near me?<span class="arrow">&#9660;</span></div>
+    <div class="answer">A: To find a store location near you go to our <a href="..\HTML Folder\LocationsPage.html" style="color: blue;">locations page</a>.</div>
+</div>
+
+<div class="faq-item">
+    <div class="question">Q: What are the shipping details?<span class="arrow">&#9660;</span></div>
+    <div class="answer">A: We can ship you products anywhere within the United States.</div>
+</div>
+
+<div class="faq-item">
+    <div class="question">Q: What is the refund policy?<span class="arrow">&#9660;</span></div>
+    <div class="answer">A: You can refund an item within 30 days of your purchase.</div>
+</div>
+
+
+
+</div>
+
+
+
+<footer>
+    <a href="..\HTML Folder\ContactUs.html">Contact Us</a>
+    <a href="..\HTML Folder\TermsofService.html">Terms of Service</a>
+    <a href="..\HTML Folder\AboutUs.html">About Us</a>
+    <a href="#top" id="top-link">Go to Top</a>
+</footer>
+
+
+
+<script>
+    function addToCart() {
+        // Your add to cart logic goes here
+
+        // Stop the default behavior of the link
+        event.preventDefault();
+		
+		
+		}
+</script>
+
+
+<script src="../JavaScript Folder/products.js"></script>
+</body>
+</html>
+
+
+
+
+
